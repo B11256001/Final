@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京旅遊攻略</title>
+    <link rel="stylesheet" href="B11256001.CSS" />
+    <style>
+      /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        background-color: #ff6347;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 1rem;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .content-wrapper {
+        max-width: 60%;
+        text-align: center;
+      }
+
+      .side-images {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url("img/圖騰.jpg") repeat-y center center;
+      }
+
+      .side-images.left {
+        left: 0;
+      }
+
+      .side-images.right {
+        right: 0;
+      }
+
+      .side-images img {
+        margin-bottom: 1rem;
+        max-width: 100%;
+      }
+
+      section {
+        display: none;
+      }
+
+      section:target {
+        display: block;
+      }
+
+      h2 {
+        color: #ff6347;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+
+        .side-images {
+          display: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header {
+          padding: 0.5rem;
+        }
+
+        main {
+          padding: 0.5rem;
+        }
+
+        footer {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>東京旅遊攻略</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#attractions">景點介紹</a></li>
+            <li><a href="#food">美食推薦</a></li>
+            <li><a href="#transport">交通指南</a></li>
+            <li><a href="#contact">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="side-images left"></div>
+        <div class="content-wrapper">
+          <section id="home">
+            <h2>歡迎來到東京旅遊攻略</h2>
+            <p>這裡有最新最全的東京旅遊資訊，幫助你暢遊東京。</p>
+          </section>
+          <section id="attractions">
+            <h2>景點介紹</h2>
+            <article>
+              <h3>東京迪士尼</h3>
+              <img
+                class="attraction-img"
+                src="img/東京迪士尼.jpg"
+                alt="東京迪士尼"
+                width="400px"
+                height="800px"
+              />
+              <a href="https://www.tokyodisneyresort.jp/tc/index.html"
+                >東京迪士尼</a
+              >
+
+              <p>
+                夢想與魔法的王國 —
+                體驗壯觀的遊行表演與遊樂設施等，展開一段充滿感動與驚奇的夢幻冒險。
+                東京迪士尼樂園由7座主題區域組成，歡迎在此度過夢幻般的一天。
+              </p>
+            </article>
+            <article>
+              <h3>淺草寺</h3>
+              <img src="img/淺草寺.jpg" alt="淺草寺" />
+              <a href="https://www.gltjp.com/zh-hant/article/item/10068/"
+                >淺草寺</a
+              >
+              <p>
+                東京都內歷史最悠久的寺院淺草寺，每年參拜人數超過3,000萬人次！
+                寺院建於628年。據說在戰國時代，德川家康曾為了在爭奪天下的重要戰役「關原之戰」中取得勝利而特地來此祈願。
+                寺院內有作為淺草寺象徵的「雷門」，以及被指定為重要文化財產的「淺草寺傳法院」等多個代表日本歷史文化之獨特魅力的建築。
+                從雷門到正殿全長約 250公尺
+                的「仲見世通」上，土產店和小吃攤等各種店鋪鱗次櫛比。可在人潮川流不息的商店街上購買和菓子、日本茶以及能感受日本傳統文化的土特產等伴手禮，盡情享受東京下町特有的懷舊風情。
+                如此滿載日本歷史及傳統文化的「淺草寺」，是造訪東京必去一次的魅力景點。
+              </p>
+            </article>
+          </section>
+          <section id="food">
+            <h2>
+              <a href="https://www.tokyostationcity.com/tc/introduction/"
+                >美食推薦</a
+              >
+            </h2>
+
+            <article>
+              <h3>江戶前壽司</h3>
+              <img src="img/壽司.jpg" alt="江戶前壽司" />
+              <p>
+                當時在屋台販賣飯糰大小的手握壽司，可以直接用手食用，是一種類似現代快餐一樣的方便食物。
+                「江戶前壽司」的特點是使用味道醇厚的紅醋，醋飯會略帶紅色，並使用經過事前調味的食材，更能帶出魚肉的鮮味。
+                現今在東京依然能吃到這種保留了江戶時代特色的「江戶前壽司」，不妨品嚐一下。
+              </p>
+            </article>
+          </section>
+          <section id="transport">
+            <h2>交通指南</h2>
+            <a href="https://www.tokyometro.jp/tcn/subwaymap/index.html"
+              >東京地鐵這樣搭！<br
+            /></a>
+            <a href="https://www.kotsu.metro.tokyo.jp/ch_h/tips/bus_ride.html"
+              >東京公車這樣搭！<br
+            /></a>
+            <a href="https://www.tokyostationcity.com/tc/introduction/"
+              >東京火車這樣搭！</a
+            >
+            <p>東京擁有便捷的公共交通系統，包括地鐵、巴士和火車。</p>
+          </section>
+          <section id="contact">
+            <h2>聯絡我們</h2>
+            <p>
+              如果你有任何問題或建議，請<a href="mailto:info@tokyotravel.com"
+                >發郵件給我們</a
+              >。
+            </p>
+          </section>
+        </div>
+        <div class="side-images right"></div>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2024 東京旅遊攻略. B11256001陳翰恩.</p>
+    </footer>
+  </body>
+</html>
